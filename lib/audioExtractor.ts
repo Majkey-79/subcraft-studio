@@ -53,8 +53,10 @@ export async function extractAudioFromVideoFile(
     outputName
   ]);
 
+
   const data = await ffmpeg.readFile(outputName);
-  const audioBlob = new Blob([data as Uint8Array], { type: "audio/wav" });
+  const uint8Data = data as Uint8Array;
+  const audioBlob = new Blob([uint8Data.buffer as ArrayBuffer], { type: "audio/wav" });
   const audioUrl = URL.createObjectURL(audioBlob);
 
   // Úklid souborů z virtuální paměti FFmpeg
