@@ -35,7 +35,9 @@ yarn-error.log*
 
 # vercel
 .vercel
-nexus-webapp-504800-2dae3afa81d5.json
+
+# GCP
+nexus-webapp-504800-f46800bea4c9.json
 
 # typescript
 *.tsbuildinfo
