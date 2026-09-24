@@ -13,7 +13,7 @@ if (process.env.GCP_CREDENTIALS) {
   process.env.GOOGLE_APPLICATION_CREDENTIALS = keyPath;
 }
 
-const projectId = process.env.GOOGLE_CLOUD_PROJECT || "nexus-webapp-504800";
+const projectId = process.env.GOOGLE_CLOUD_PROJECT || "your-project";
 const location = process.env.GOOGLE_CLOUD_LOCATION || "global";
 
 const ai = new GoogleGenAI({
