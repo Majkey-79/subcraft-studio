@@ -7,8 +7,8 @@ SubCraft Studio is a professional, browser-based subtitle editor built with Next
 ## ✨ Key Features
 
 ### 🤖 AI-Powered Workflow (Google Vertex AI & Gemini)
-*   **Auto-Transcription:** Extracts audio via FFmpeg in the browser, chunks it optimally, and uses Gemini 3.5 Flash for high-accuracy word-level timestamp generation.
-*   **Context-Aware Translation:** Streams translations in real-time. The AI is prompted with strict constraints to maintain character personas, formal/informal tones, and correct movie dialogue pacing.
+*   **Auto-Transcription:** Extracts audio via FFmpeg in the browser, chunks it optimally, and uses `gemini-3.5-transcribe-preview` for high-accuracy word-level timestamp generation.
+*   **Context-Aware Translation:** Powered by `gemini-3.7-flash` with NDJSON streaming. The AI is prompted with strict constraints to maintain character personas, formal/informal tones, and correct movie dialogue pacing.
 *   **Rate-Limit Resiliency:** Built-in exponential backoff and retry queues to gracefully handle API quotas (`429 Quota Exceeded`).
 
 ### ⚡ Advanced Client-Side Processing
@@ -23,11 +23,11 @@ SubCraft Studio is a professional, browser-based subtitle editor built with Next
 
 ## 🛠️ Tech Stack
 
-*   **Framework:** Next.js (App Router), React 18+
+*   **Framework:** Next.js 16+ (App Router), React 19
 *   **Styling:** Tailwind CSS, shadcn/ui, Lucide Icons
-*   **AI Integration:** `@google/genai` (Vertex AI / Gemini API)
+*   **AI Integration:** `@google/genai` (Vertex AI / Gemini 3.x Models)
 *   **Media Processing:** `@ffmpeg/ffmpeg` (WebAssembly), `wavesurfer.js`
-*   **State & Performance:** Zustand/React Context, TanStack Virtualizer
+*   **State & Performance:** React Hooks, TanStack Virtualizer
 
 ## 🚀 Getting Started
 
