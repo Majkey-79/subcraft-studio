@@ -39,7 +39,6 @@ yarn-error.log*
 # GCP
 nexus-webapp-504800-f46800bea4c9.json
 *service-account*.json
-nexus-webapp*.json
 
 # typescript
 *.tsbuildinfo
